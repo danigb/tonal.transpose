@@ -8,12 +8,14 @@
 [![tonal](https://img.shields.io/badge/lib-tonal-yellow.svg)](https://www.npmjs.com/package/tonal)
 
 
-`tonal.transpose` is a function to get transpose notes:
+`tonal.transpose` is a function to transpose notes:
 
 ```js
 var transpose = require('tonal.transpose')
 distance('C3', '3m') // => 'Eb3'
 ```
+
+It's part of [tonal](https://www.npmjs.com/package/tonal)
 
 ## Install
 
@@ -60,7 +62,7 @@ major3th('D') // => 'F#'
 
 Partially applied transposers allows to work with arrays seamlessly:
 
-```
+```js
 ['C', 'D', 'E', 'F', 'G'].map(transpose('3M')) // => ['E', 'F#', 'G#', 'A', 'B']
 ['1P', '3m', '5P'].map(transpose('C')) // => ['C', 'Eb', 'G']
 ```
@@ -75,7 +77,6 @@ This library can work with [pitches or intervals expressed as arrays]()
 #### More...
 
 See [tonal](https://www.npmjs.com/package/tonal)
-
 
 ## License
 
