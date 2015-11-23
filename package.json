@@ -1,0 +1,42 @@
+{
+  "name": "tonal.transpose",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Transpose notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "vows --spec test/*.js",
+    "docs": "documentation -f md > API.md",
+    "dist": "browserify index.js | uglifyjs > dist/tonal.transpose.min.js&& ls -hall dist/",
+    "disc": "browserify --full-paths lib/index.js | uglifyjs | discify > tmp/disc.html",
+    "coverage": "istanbul cover vows test/**/*.test.js",
+    "cover": "npm run coverage && open ./coverage/lcov-report/index.html",
+    "climate": "npm run coverage && npm run codeclimate",
+    "codeclimate": "CODECLIMATE_REPO_TOKEN= codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigb/tonal.transpose.git"
+  },
+  "keywords": [
+    "music",
+    "theory",
+    "note",
+    "transposition",
+    "transpose",
+    "interval",
+    "tonal"
+  ],
+  "author": "danigb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigb/tonal.transpose/issues"
+  },
+  "homepage": "https://github.com/danigb/tonal.transpose#readme",
+  "devDependencies": {
+    "vows": "^0.8.x"
+  },
+  "dependencies": {
+    "tonal.pitch": "file:../pitch/lib"
+  }
+}
