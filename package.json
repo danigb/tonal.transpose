@@ -9,7 +9,7 @@
     "test": "vows --spec test/*.js",
     "docs": "documentation -f md > API.md",
     "dist": "browserify index.js | uglifyjs > dist/tonal.transpose.min.js&& ls -hall dist/",
-    "disc": "browserify --full-paths lib/index.js | uglifyjs | discify > tmp/disc.html",
+    "disc": "browserify --full-paths index.js | uglifyjs | discify > dist/disc.html",
     "coverage": "istanbul cover vows test/**/*.test.js",
     "cover": "npm run coverage && open ./coverage/lcov-report/index.html",
     "climate": "npm run coverage && npm run codeclimate",

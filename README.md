@@ -19,7 +19,12 @@ It's part of [tonal](https://www.npmjs.com/package/tonal)
 
 ## Install
 
-Only via npm: `npm i --save tonal.transpose`
+Only via npm: `npm i --save tonal.transpose` and require the function or with the [distribution file] (adds `transpose` function to window globals):
+
+```html
+<script src="tonal.transpose.min.js"></script>
+<script>console.log(transpose('C3', '3m'))</script>
+```
 
 ## Usage
 
