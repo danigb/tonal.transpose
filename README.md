@@ -8,7 +8,7 @@
 [![tonal](https://img.shields.io/badge/lib-tonal-yellow.svg)](https://www.npmjs.com/package/tonal)
 
 
-`tonal.transpose` is a function to transpose notes:
+`tonal.transpose` is a [compact](https://rawgit.com/danigb/tonal.transpose/master/dist/disc.html) function to transpose notes:
 
 ```js
 var transpose = require('tonal.transpose')
@@ -19,7 +19,7 @@ It's part of [tonal](https://www.npmjs.com/package/tonal)
 
 ## Install
 
-Only via npm: `npm i --save tonal.transpose` and require the function or with the [distribution file] (adds `transpose` function to window globals):
+Only via npm: `npm i --save tonal.transpose` and require the function or with the [distribution file](https://raw.githubusercontent.com/danigb/tonal.transpose/master/dist/tonal.transpose.min.js) (adds `transpose` function to window globals):
 
 ```html
 <script src="tonal.transpose.min.js"></script>
