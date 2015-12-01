@@ -74,13 +74,6 @@ Partially applied transposers allows to work with arrays seamlessly:
 ['1P', '3m', '5P'].map(transpose('C')) // => ['C', 'Eb', 'G']
 ```
 
-#### Using different interval or pitch representations
-
-This library can work with [pitches or intervals expressed as arrays]()
-
-```js
-```
-
 #### More...
 
 See [tonal](https://www.npmjs.com/package/tonal)
